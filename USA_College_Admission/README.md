@@ -5,3 +5,17 @@ This project is currently being worked on. See the [jupyter notebook](USA_Colleg
 
 ## Overview
 This is a small (400x7) dataset.
+
+## Methods
+
+### Data Exploration
+
+#### Looking at raw data
+
+### Data Pipeline
+
+### Model selection 
+
+### Generalization 
+
+### Summary and Outlook

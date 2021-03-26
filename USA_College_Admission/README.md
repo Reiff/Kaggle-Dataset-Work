@@ -32,6 +32,14 @@ Note: range of correlations is (-.33 to 0.38)
 - negative correlation between "being male" and GRE scores -- at least in physics applicants, I believe the opposite is true
 - moderate negative correlation between "being Asian" and admission; but, also smaller (-) with application metrics
 
+#### admitted vs not-admitted
+Exploring the distribution of each attribute by admission status:
+- GPA < 3.25 make up a larger portion of non-admitted students
+- GRE > 650 make up a larger portion of admitted students (also, possible cut-off ~400)
+- lowest ugrad prestige rank make up a larger portion of non-admitted students
+- small portion of admitted students are Asian (and vice versa)
+
+Also considering distributions by race and gender, most other attributes show less obvious differences, given the small sample size.
 
 
 ### Data preparation

@@ -47,6 +47,7 @@ I split the race attribute into separate attributes for each race, allowing for 
 **Random Forest**
 - slightly better than SGD
 - still not good
+![alt text](images/roc_curve_Both.png)
 
 ### Comparing populations by model
 Assuming we were satisfied with the classifier's performance, an important check would be to consider how its predictions vary from data, across attributes.
@@ -63,6 +64,10 @@ Random forest more strongly favors <> than reality or SGD:
 - high undergrad institution prestige
 - Asian and Hispanic students over African-American ones
 Stochastic Gradient Descent generally places more preference on middle-ground GPA, ugrad prestige, and socioeconomic rank, but otherwise does not seem to have systemic errors
+
+
+![alt text](images/GPA_by_classifier.png)
+![alt text](images/ugrad_prestige_rank_by_classifier.png)
 
 ## Generalization 
 

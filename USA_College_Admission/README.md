@@ -21,7 +21,6 @@ Given the small number of attributes and instances, plus simple datatypes, data 
 ### Looking at raw data
 From df.info() and histograms, we can see that the data does not appear to need cleaning (unless very poor missing data placeholders were used)
 
-![alt text](images/attribute_histogram_plots.png)
 Initial observations:
 - significant portion of GRE and (esp.) GPA scores at max values
 - even spread of race, gender, and socioeconomic rank
@@ -53,6 +52,7 @@ For each model, I considered training with the full feature set and only the thr
 
 ## Model selection
 **Stochastic Gradient Descent**
+
 Training on all features:
 - poor performance overall
 - generally appears only slightly better than random guess
@@ -82,6 +82,7 @@ For example, does the model expect more men to be admitted than women? If so, ca
 
 
 Observations:
+
 All three models have poor precision
 
 Random forest more strongly favors <> than reality (or SGD):
@@ -96,9 +97,9 @@ Logistic regression quite strongly favors <> than reality (or SGD):
 - high undergrad institution prestige (admitting few 3's and none below)
 - higher socioeconomic rank
 
-Note that in real data, explicit metrics may be more highly correlated with race, gender, and socioeconomic rank. This could potentially lead the models to exclude marginalized groups while ostensibly treating them equally.
-
 Stochastic Gradient Descent generally places slightly more preference on middle-ground GPA, ugrad prestige, and socioeconomic rank, but otherwise does not seem to have systemic errors.
+
+Note that in real data, explicit metrics may be more highly correlated with race, gender, and socioeconomic rank. This could potentially lead the models to exclude marginalized groups while ostensibly treating them equally.
 
 
 ![alt text](images/GPA_by_classifier.png)
